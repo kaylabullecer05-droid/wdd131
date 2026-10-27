@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Kayla Mae Bullecer</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals homepage for Kayla Mae Bullecer">
-    <meta name="author" content="Kayla Mae Bullecer">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kayla Mae N. Bullecer</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kayla Mae N. Bullecer - home page, course landing, web development, HTML CSS JavaScript">
+    <meta name="author" content="Kayla Mae N. Bullecer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Dynamic Web Fundamentals</h1>
-    <p>Hello! My name is Kayla Mae Bullecer. Welcome to my WDD131 homepage!</p>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Kayla Mae N. Bullecer</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <div class="text">
+                    <p>Hello, I am Kayla Mae N. Bullecer from Bambang, Nueva Vizcaya, Philippines. I am excited to learn Dynamic Web Fundamentals in WDD 131 and to build responsive and accessible websites.</p>
+                    <p>I enjoy learning new technology and improving my design skills. This course will help me build a strong foundation in HTML, CSS, and JavaScript.</p>
+                    <h3>My Home - Nueva Vizcaya</h3>
+                    <p>Bambang is a peaceful town in Nueva Vizcaya, known for its kind people and beautiful mountains. It is a great place to study and grow.</p>
+                </div>
+                <img src="images/profile.jpg" alt="Portrait of Kayla Mae N. Bullecer" width="150">
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3docs.com/" target="_blank">W3 Docs</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Placeholder</a></li>
+                </ul>
+                <img src="images/nueva-vizcaya.jpg" alt="Scenery of Nueva Vizcaya" width="200">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Kayla Mae N. Bullecer - Bambang, Nueva Vizcaya, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
