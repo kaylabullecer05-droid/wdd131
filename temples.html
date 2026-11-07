@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temple Album | Mae Kayla</title>
+<meta name="description" content="WDD 131 Temple Album - A responsive gallery of beautiful temples.">
+<meta name="author" content="Mae Kayla">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/temples.css">
+<link rel="stylesheet" href="styles/temples-large.css">
+<script src="scripts/temples.js" defer></script>
+</head>
+<body>
+<header>
+  <h2 class="logo">Temple Album</h2>
+  <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+  <nav id="nav"><ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">Old</a></li>
+    <li><a href="#">New</a></li>
+    <li><a href="#">Large</a></li>
+    <li><a href="#">Small</a></li>
+  </ul></nav>
+</header>
+<main>
+  <h1>Temple Album</h1>
+  <p class="subtitle">Sacred houses of the Lord — beautiful, peaceful, and holy places around the world.</p>
+  <div class="album">
+    <figure><img src="images/salt-lake.jpg" alt="Salt Lake Temple" loading="lazy" width="640" height="480"><figcaption>Salt Lake Temple</figcaption></figure>
+    <figure><img src="images/manila.jpg" alt="Manila Philippines Temple" loading="lazy" width="640" height="480"><figcaption>Manila Philippines Temple</figcaption></figure>
+    <figure><img src="images/rome.jpg" alt="Rome Italy Temple" loading="lazy" width="640" height="480"><figcaption>Rome Italy Temple</figcaption></figure>
+    <figure><img src="images/laie.jpg" alt="Laie Hawaii Temple" loading="lazy" width="640" height="480"><figcaption>Laie Hawaii Temple</figcaption></figure>
+    <figure><img src="images/cebu.jpg" alt="Cebu City Philippines Temple" loading="lazy" width="640" height="480"><figcaption>Cebu City Philippines Temple</figcaption></figure>
+    <figure><img src="images/tokyo.jpg" alt="Tokyo Japan Temple" loading="lazy" width="640" height="480"><figcaption>Tokyo Japan Temple</figcaption></figure>
+    <figure><img src="images/san-diego.jpg" alt="San Diego California Temple" loading="lazy" width="640" height="480"><figcaption>San Diego California Temple</figcaption></figure>
+    <figure><img src="images/london.jpg" alt="London England Temple" loading="lazy" width="640" height="480"><figcaption>London England Temple</figcaption></figure>
+    <figure><img src="images/sydney.jpg" alt="Sydney Australia Temple" loading="lazy" width="640" height="480"><figcaption>Sydney Australia Temple</figcaption></figure>
+  </div>
+</main>
+<footer>
+  <p>&copy; <span id="currentyear"></span> 🌸 Mae Kayla 🌸 Philippines</p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>

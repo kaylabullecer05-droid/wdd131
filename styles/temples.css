@@ -1,0 +1,20 @@
+:root{--navy:#1b2a4a;--gold:#c9a227;--cream:#fdf8f0;--ink:#222;--muted:#5a6473}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+header{background:var(--navy);color:#fff;padding:1rem;display:flex;align-items:center;justify-content:space-between;position:relative}
+.logo{font-family:'Playfair Display',serif;font-size:1.6rem;letter-spacing:.5px}
+#menu{background:none;border:0;color:#fff;font-size:1.9rem;cursor:pointer;line-height:1}
+nav{display:none;width:100%;position:absolute;top:100%;left:0;background:var(--navy);z-index:10}
+nav.open{display:block}
+nav ul{list-style:none;display:flex;flex-direction:column}
+nav a{display:block;color:#fff;text-decoration:none;padding:.9rem 1.2rem;font-weight:500;text-align:center}
+nav a:hover,nav a.active{background:var(--gold);color:var(--navy)}
+main{max-width:1000px;margin:0 auto;padding:1.25rem 1rem 2rem}
+h1{font-family:'Playfair Display',serif;text-align:center;font-size:2rem;color:var(--navy);margin:.5rem 0 .25rem}
+.subtitle{text-align:center;color:var(--muted);margin-bottom:1.5rem}
+.album{display:grid;grid-template-columns:1fr;gap:1.25rem}
+figure{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+figure img{width:100%;height:220px;object-fit:cover;display:block}
+figcaption{text-align:center;padding:.85rem;font-weight:600;color:var(--navy);font-family:'Playfair Display',serif}
+footer{background:var(--navy);color:#fff;text-align:center;padding:1.2rem;font-size:.95rem}
+footer p:last-child{color:#ffd966;font-size:.85rem;margin-top:.25rem}
