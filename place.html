@@ -1,58 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Philippines - Country Data, Geography and Weather | WDD 131</title>
-  <meta name="description" content="Discover the Philippines in WDD 131 Week 03: explore key country data, geography, and current weather for Manila and the islands.">
-  <meta name="author" content="Kayla Mae Bullecer">
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="scripts/place.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Philippines</h1>
-  </header>
+const temples = [
+  {
+    templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
+    area: 11500,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+  },
+  {
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+  },
+  {
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+  },
+  {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  {
+    templeName: "Salt Lake",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
+    area: 382207,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-77247-wallpaper.jpg"
+  },
+  {
+    templeName: "Tokyo Japan",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27",
+    area: 53997,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-temple-lds-1071089-wallpaper.jpg"
+  },
+  {
+    templeName: "Paris France",
+    location: "Le Chesnay, France",
+    dedicated: "2017, May, 21",
+    area: 44175,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-exterior-evening-1905504.jpg"
+  },
+  {
+    templeName: "Manila Philippines",
+    location: "Quezon City, Philippines",
+    dedicated: "1984, September, 25",
+    area: 26683,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129852-wallpaper.jpg"
+  },
+  {
+    templeName: "Cebu City Philippines",
+    location: "Cebu City, Philippines",
+    dedicated: "2010, June, 13",
+    area: 29556,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cebu-city-philippines/400x250/cebu-city-philippines-temple-lds-1028498-wallpaper.jpg"
+  },
+  {
+    templeName: "Urdaneta Philippines",
+    location: "Urdaneta, Pangasinan, Philippines",
+    dedicated: "2024, April, 28",
+    area: 32604,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/urdaneta-philippines/400x250/urdaneta-philippines-temple-exterior-1606413.jpg"
+  }
+];
 
-  <main>
-    <div class="hero">
-      <picture>
-        <source srcset="images/philippines-mobile.webp" media="(max-width: 600px)">
-        <source srcset="images/philippines-large.webp" media="(min-width: 601px)">
-        <img src="images/philippines-large.webp" alt="Banaue Rice Terraces in the Philippines at golden hour" width="1200" height="675">
-      </picture>
+const container = document.querySelector("#temple-cards");
+const pageTitle = document.querySelector("main h2");
 
-      <section class="card data-card">
-        <h2>Data</h2>
-        <dl>
-          <div><dt>Area:</dt><dd>300,000 sq km</dd></div>
-          <div><dt>Population:</dt><dd>114,891,199</dd></div>
-          <div><dt>Capital:</dt><dd>Manila</dd></div>
-          <div><dt>Languages:</dt><dd>Filipino, English</dd></div>
-          <div><dt>Currency:</dt><dd>Philippine Peso (₱)</dd></div>
-          <div><dt>Time Zone:</dt><dd>UTC+8</dd></div>
-          <div><dt>Calling Code:</dt><dd>+63</dd></div>
-          <div><dt>Internet TLD:</dt><dd>.ph</dd></div>
-        </dl>
-      </section>
+function displayTemples(filteredTemples) {
+  container.innerHTML = "";
+  filteredTemples.forEach((temple) => {
+    const card = document.createElement("section");
+    card.classList.add("temple-card");
 
-      <section class="card weather-card">
-        <h2>Weather</h2>
-        <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="Partly cloudy icon" width="80" height="80">
-        <dl>
-          <div><dt>Temperature:</dt><dd><span id="temp">28</span> °C</dd></div>
-          <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
-          <div><dt>Wind:</dt><dd><span id="wind">12</span> km/h</dd></div>
-          <div><dt>Wind Chill:</dt><dd><span id="windchill">N/A</span></dd></div>
-        </dl>
-      </section>
-    </div>
-  </main>
+    const name = document.createElement("h3");
+    name.textContent = temple.templeName;
 
-  <footer>
-    <p>© <span id="currentyear"></span> Kayla Mae Bullecer &bull; Philippines</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-    <p class="course">WDD 131 - Dynamic Web Fundamentals</p>
-  </footer>
-</body>
-</html>
+    const location = document.createElement("p");
+    location.innerHTML = `<span>Location:</span> ${temple.location}`;
+
+    const dedicated = document.createElement("p");
+    dedicated.innerHTML = `<span>Dedicated:</span> ${temple.dedicated}`;
+
+    const area = document.createElement("p");
+    area.innerHTML = `<span>Size:</span> ${temple.area.toLocaleString()} sq ft`;
+
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+    img.width = 400;
+    img.height = 250;
+
+    card.append(name, location, dedicated, area, img);
+    container.appendChild(card);
+  });
+}
+
+function setActiveLink(id) {
+  document.querySelectorAll(".navigation a").forEach(a => a.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+
+document.querySelector("#home").addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "Home";
+  setActiveLink("home");
+  displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "Old";
+  setActiveLink("old");
+  displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900));
+});
+
+document.querySelector("#new").addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "New";
+  setActiveLink("new");
+  displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000));
+});
+
+document.querySelector("#large").addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "Large";
+  setActiveLink("large");
+  displayTemples(temples.filter(t => t.area > 90000));
+});
+
+document.querySelector("#small").addEventListener("click", (e) => {
+  e.preventDefault();
+  pageTitle.textContent = "Small";
+  setActiveLink("small");
+  displayTemples(temples.filter(t => t.area < 10000));
+});
+
+const menuBtn = document.querySelector("#menu");
+const navList = document.querySelector(".navigation");
+menuBtn.addEventListener("click", () => {
+  navList.classList.toggle("open");
+  menuBtn.textContent = navList.classList.contains("open") ? "✖" : "☰";
+});
+
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
+displayTemples(temples);
