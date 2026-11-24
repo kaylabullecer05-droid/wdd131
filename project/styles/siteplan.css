@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; background: #FEFAE0; color: #2B2B2B; line-height: 1.6; }
+header { background: #1B4332; color: white; text-align: center; padding: 2rem 1rem; }
+header h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; }
+.tagline { color: #E9A426; margin-top: 0.5rem; font-weight: 700; }
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+section { background: white; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; }
+h2 { font-family: 'Playfair Display', serif; color: #1B4332; border-bottom: 3px solid #E9A426; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+h3 { color: #1B4332; margin: 1.5rem 0 0.5rem; font-family: 'Playfair Display', serif; }
+p { margin-bottom: 0.75rem; } ul { margin-left: 1.5rem; margin-bottom: 0.75rem; } li { margin-bottom: 0.4rem; }
+.logo-box { text-align: center; background: #FEFAE0; border: 2px dashed #1B4332; padding: 1rem; margin-bottom: 1rem; border-radius: 10px; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #1B4332; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; } th, td { border: 1px solid #ddd; padding: 0.75rem; text-align: left; } th { background: #1B4332; color: white; }
+.swatch { display: inline-block; width: 20px; height: 20px; border-radius: 50%; border: 1px solid #999; vertical-align: middle; margin-right: 0.5rem; }
+.swatch.green { background: #1B4332; } .swatch.gold { background: #E9A426; } .swatch.cream { background: #FEFAE0; } .swatch.dark { background: #2B2B2B; }
+.font-heading { font-family: 'Playfair Display', serif; font-size: 1.2rem; } .font-body { font-family: 'Roboto', sans-serif; }
+.wireframe { border: 2px solid #1B4332; border-radius: 10px; padding: 1rem; background: #f8f8f8; margin-bottom: 1rem; }
+.wireframe.mobile { max-width: 350px; }
+.wf-header, .wf-hero, .wf-box, .wf-footer { background: white; border: 1px dashed #1B4332; text-align: center; padding: 0.75rem; margin-bottom: 0.5rem; border-radius: 5px; }
+.wf-hero { background: #E9A426; color: white; font-weight: 700; } .wf-footer { background: #1B4332; color: white; }
+.wf-row { display: flex; gap: 0.5rem; } .wf-row .wf-box { flex: 1; }
+footer { background: #1B4332; color: white; text-align: center; padding: 1.5rem; margin-top: 1rem; }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Discover Bambang, Cagayan Valley | WDD 131</title>
+  <meta name="description" content="Site plan for Discover Bambang, Cagayan Valley travel guide project for WDD 131 by Kayla Mae Bullecer.">
+  <meta name="author" content="Kayla Mae Bullecer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Discover Bambang, Cagayan Valley</h1>
+    <p class="tagline">🌿 A Travel Guide to Nature, Food, and Culture 🌿</p>
+  </header>
+  <main>
+    <section>
+      <h2>1. Site Name</h2>
+      <div class="logo-box"><span class="logo">🌿 DISCOVER BAMBANG</span><p><strong>Discover Bambang, Cagayan Valley</strong></p></div>
+      <p>This name was chosen because it is clear, welcoming, and tells visitors exactly what the site is about — discovering Bambang, a beautiful town in Cagayan Valley, Philippines. The word "Discover" invites visitors to explore places they may not know yet.</p>
+      <p><strong>Optional domain:</strong> discoverbambang.com</p>
+    </section>
+    <section>
+      <h2>2. Site Purpose</h2>
+      <p>The site provides a travel guide for visitors who want to explore Bambang in Cagayan Valley. It will include must-visit spots, local food to try, festivals and culture, how to get there, the best time to visit, and practical tips for first-time visitors.</p>
+      <p>The site will have three pages:</p>
+      <ul>
+        <li><strong>Home</strong> — Welcome, highlights, and why visit Bambang</li>
+        <li><strong>Places to Visit</strong> — Nature spots, food spots, and cultural spots with photos and descriptions</li>
+        <li><strong>Plan Your Trip</strong> — How to get there, best time to visit, and an interactive trip planner form</li>
+      </ul>
+    </section>
+    <section>
+      <h2>3. Scenarios</h2>
+      <ul>
+        <li><strong>Scenario 1:</strong> "What are the must-visit spots in Bambang if I only have one day?"</li>
+        <li><strong>Scenario 2:</strong> "How do I get to Bambang from Manila or Tuguegarao, and how much will it cost?"</li>
+        <li><strong>Scenario 3:</strong> "What local food should I try in Bambang, and where can I eat?"</li>
+        <li><strong>Scenario 4:</strong> "When is the best time to visit Bambang for good weather and festivals?"</li>
+      </ul>
+    </section>
+    <section>
+      <h2>4. Color Schema</h2>
+      <p>I chose colors inspired by Bambang's nature — green mountains, golden rice fields, and warm hospitality.</p>
+      <table><tr><th>Color</th><th>Hex</th><th>Where It Will Be Used</th></tr>
+      <tr><td><span class="swatch green"></span> Forest Green</td><td>#1B4332</td><td>Headings, header, footer, navigation</td></tr>
+      <tr><td><span class="swatch gold"></span> Golden Yellow</td><td>#E9A426</td><td>Buttons, accents, hover effects, highlights</td></tr>
+      <tr><td><span class="swatch cream"></span> Cream</td><td>#FEFAE0</td><td>Page background</td></tr>
+      <tr><td><span class="swatch dark"></span> Dark Text</td><td>#2B2B2B</td><td>Body paragraphs</td></tr></table>
+    </section>
+    <section>
+      <h2>5. Typography</h2>
+      <table><tr><th>Font</th><th>Where It Will Be Used</th><th>Example</th></tr>
+      <tr><td>Playfair Display</td><td>Headings (h1, h2, h3)</td><td class="font-heading">Discover Bambang</td></tr>
+      <tr><td>Roboto</td><td>Body text, paragraphs, navigation, buttons</td><td class="font-body">Welcome to Bambang, a peaceful town in Cagayan Valley...</td></tr></table>
+    </section>
+    <section>
+      <h2>6. Wireframes</h2>
+      <h3>Mobile View (320px - 600px)</h3>
+      <p>Single column layout: Logo + Hamburger Menu on top, Hero Image, Welcome text, 3 highlight cards stacked, Footer.</p>
+      <div class="wireframe mobile"><div class="wf-header">LOGO | ☰ MENU</div><div class="wf-hero">HERO IMAGE<br>Welcome to Bambang</div><div class="wf-box">Welcome Text</div><div class="wf-box">Highlight Card 1 - Nature</div><div class="wf-box">Highlight Card 2 - Food</div><div class="wf-box">Highlight Card 3 - Culture</div><div class="wf-box">Plan Your Trip Button</div><div class="wf-footer">FOOTER</div></div>
+      <h3>Desktop View (900px+)</h3>
+      <p>Header with logo on left and navigation on right, wide hero image, 3 cards side-by-side in a grid, footer with 3 columns.</p>
+      <div class="wireframe desktop"><div class="wf-header">LOGO &nbsp;&nbsp;&nbsp;&nbsp; Home &nbsp; Places &nbsp; Plan Your Trip</div><div class="wf-hero">WIDE HERO IMAGE — Welcome to Bambang + Call to Action Button</div><div class="wf-row"><div class="wf-box">Nature Card</div><div class="wf-box">Food Card</div><div class="wf-box">Culture Card</div></div><div class="wf-box">Why Visit Bambang + Tips Section</div><div class="wf-footer">FOOTER — About | Quick Links | Contact</div></div>
+    </section>
+  </main>
+  <footer><p>&copy; <span id="currentyear"></span> 🌸 Kayla Mae Bullecer 🌸 Philippines</p><p>WDD 131 — Site Plan — Discover Bambang, Cagayan Valley</p></footer>
+  <script>document.querySelector("#currentyear").textContent = new Date().getFullYear();</script>
+</body>
+</html>
